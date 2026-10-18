@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Read &amp; Rise - Vocabulary Lessons 1-4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#16263f;--ink:#1f2a37;--muted:#5b6675;--line:#d5dbe3;--teal:#0e8a7e;--soft:#e3f4f1;--orange:#d9731c;--osoft:#fdf0e3;--gold:#f5b041;--ok:#1b7a3d;--okbg:#e4f6e9;--no:#b3261e;--nobg:#fde8e6;color-scheme:light}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:#f4f1ea;color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",sans-serif;font-size:18px;line-height:1.6}
+.en{font-family:Nunito,"Segoe UI",Arial,sans-serif;direction:ltr;unicode-bidi:isolate}
+button{font:inherit;cursor:pointer}
+.top{position:sticky;top:0;z-index:5;background:#fff;border-bottom:3px solid var(--navy);padding:8px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:space-between}
+.brand{font-weight:700;color:var(--navy);font-size:17px;display:flex;align-items:center;gap:8px}
+.brand .en{font-weight:800;color:var(--teal)}
+.me{display:flex;align-items:center;gap:8px;font-size:15px;color:var(--muted)}
+.me input{font:inherit;font-size:15px;border:0;border-bottom:2px solid var(--line);width:130px;padding:2px 4px;background:transparent;color:var(--navy);font-weight:700}
+.me input:focus{outline:none;border-color:var(--teal)}
+.total{background:var(--osoft);color:#8a4a0c;border-radius:999px;padding:2px 12px;font-weight:700;white-space:nowrap}
+.paper{max-width:760px;margin:16px auto 50px;background:#fff;border:1px solid var(--line);border-top:6px solid var(--teal);border-radius:6px;padding:18px 20px 26px;min-height:60vh}
+@media(max-width:560px){.paper{margin:10px 8px 40px;padding:14px 12px 22px}body{font-size:17px}}
+h1{font-size:24px;color:var(--navy);margin:2px 0 4px}
+h2{font-size:20px;color:var(--navy);margin:18px 0 8px}
+.sub{color:var(--muted);font-size:15px;margin:0 0 12px}
+.btn{border:2px solid var(--teal);background:var(--teal);color:#fff;border-radius:10px;padding:8px 18px;font-weight:700;min-height:46px}
+.btn.alt{background:#fff;color:var(--teal)}
+.btn.or{border-color:var(--orange);background:var(--orange)}
+.btn.ghost{background:#fff;border-color:var(--line);color:var(--muted)}
+.btn:active{transform:scale(.98)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.today{border:2px dashed var(--orange);background:var(--osoft);border-radius:12px;padding:12px 14px;margin:6px 0 18px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.today b{color:#8a4a0c}
+.lessons{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.lc{border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;text-align:right;display:flex;flex-direction:column;gap:6px}
+.lc:hover{border-color:var(--teal)}
+.lc .num{font-size:13px;color:var(--orange);font-weight:700}
+.lc .tt{font-size:18px;font-weight:800;color:var(--navy)}
+.meter{height:9px;background:var(--soft);border-radius:6px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--teal);width:0;transition:width .4s}
+.lc .st{font-size:14px;color:var(--muted)}
+.steps{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 14px}
+.sp{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:4px 12px;font-size:15px;color:var(--muted)}
+.sp.on{border-color:var(--teal);background:var(--teal);color:#fff;font-weight:700}
+.sp.done{border-color:var(--teal);color:var(--teal)}
+.sp.done:before{content:"✓ "}
+.back{border:0;background:none;color:var(--teal);font-weight:700;padding:4px 0;font-size:16px}
+.card{border:2px solid var(--navy);border-radius:16px;padding:18px;text-align:center;position:relative;background:#fff}
+.card .emo{font-size:54px;line-height:1.1}
+.card .w{font-size:40px;font-weight:800;color:var(--navy);margin:4px 0 0}
+.card .pr{color:var(--muted);font-size:16px}
+.card .pos{font-size:14px;color:var(--orange);font-weight:700}
+.card .ar{font-size:28px;font-weight:700;color:var(--teal);margin:6px 0}
+.trick{background:#fff8e6;border:1.5px solid #e6c56a;border-radius:12px;padding:10px 14px;text-align:right;font-size:17px;margin:12px 0 8px}
+.trick:before{content:"💡 حيلة الحفظ: ";font-weight:700;color:#7a5600}
+.ex{font-size:19px;padding:6px 10px;border-radius:10px;background:var(--soft)}
+.ex mark{background:none;color:var(--orange);font-weight:800;text-decoration:underline}
+.say{border:2px solid var(--navy);background:#fff;color:var(--navy);border-radius:999px;padding:4px 14px;font-weight:700;font-size:15px;min-height:38px}
+.cnt{position:absolute;top:10px;left:14px;font-size:14px;color:var(--muted)}
+.prog{height:10px;background:var(--soft);border-radius:6px;overflow:hidden;margin:4px 0 14px}
+.prog i{display:block;height:100%;background:var(--orange);transition:width .3s}
+.qbox{text-align:center;padding:10px 0}
+.qlabel{color:var(--muted);font-size:16px;margin-bottom:6px}
+.qword{font-size:38px;font-weight:800;color:var(--navy)}
+.qar{font-size:30px;font-weight:700;color:var(--teal)}
+.qsent{font-size:21px;line-height:1.8;padding:8px 6px}
+.qsent .blank{display:inline-block;min-width:90px;border-bottom:3px solid var(--navy);color:var(--orange);font-weight:800}
+.big-say{width:96px;height:96px;border-radius:50%;border:3px solid var(--navy);background:#fff;font-size:42px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+@media(max-width:420px){.opts{grid-template-columns:1fr}}
+.opt{border:2px solid #9aa4b1;background:#fff;border-radius:12px;padding:10px;min-height:56px;font-size:20px;font-weight:700;color:var(--ink)}
+.opt:hover:not(:disabled){border-color:var(--teal);background:var(--soft)}
+.opt.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
+.opt.bad{background:var(--nobg);border-color:var(--no);color:var(--no);text-decoration:line-through;animation:shake .3s}
+.opt.dim{opacity:.4}
+.spell{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.spell input{font:inherit;font-family:Nunito,Arial,sans-serif;font-size:26px;font-weight:800;text-align:center;direction:ltr;border:0;border-bottom:3px solid var(--navy);background:#f7f7fb;width:min(320px,90%);padding:4px 8px;color:var(--navy)}
+.spell input:focus{outline:2px solid var(--teal)}
+.spell input.bad{background:var(--nobg);border-color:var(--no);animation:shake .3s}
+.spell input.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
+.hintl{font-family:Nunito,monospace;direction:ltr;letter-spacing:6px;font-size:24px;color:var(--muted);margin-top:6px}
+.fb{margin-top:14px;border-radius:12px;padding:10px 14px;text-align:right;font-size:17px}
+.fb:empty{display:none}
+.fb.ok{background:var(--okbg);color:#12411f}
+.fb.no{background:var(--nobg);color:#6b1510}
+.fb .trick{margin:8px 0 0}
+.fin{text-align:center;padding:16px 4px}
+.fin .big{font-size:60px}
+.fin h1{color:var(--ok)}
+.wl{width:100%;border-collapse:collapse;font-size:17px}
+.wl td{border-bottom:1px dotted var(--line);padding:6px 4px;vertical-align:middle}
+.wl .stars{color:var(--gold);white-space:nowrap;letter-spacing:1px}
+.wl .lh td{background:var(--soft);font-weight:700;color:var(--navy)}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--navy);color:#fff;border-radius:999px;padding:8px 20px;font-weight:700;transition:transform .35s;z-index:9}
+.toast.on{transform:translateX(-50%) translateY(0)}
+.foot{max-width:760px;margin:-34px auto 40px;padding:0 20px;font-size:14px;color:var(--muted)}
+.foot details summary{cursor:pointer;color:var(--teal);font-weight:700}
+.reset{border:1px solid #bbb;background:#fff;color:#777;border-radius:8px;padding:2px 10px;font-size:13px}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+@keyframes pop{0%{transform:scale(.4)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+.pop{animation:pop .5s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="brand">📘 <span class="en">Read &amp; Rise</span> · كلمات الدروس ١–٤</div>
+  <div class="me">اسمك: <input id="nm" placeholder="اكتب اسمك" maxlength="20"><span class="total" id="tot">✅ 0 / 40</span></div>
+</div>
+<div class="paper" id="app"></div>
+<div class="foot">
+  <details><summary>كيف أحفظ الكلمات وما أنساها؟</summary>
+  <p>١) ادخل كل درس مرة: تعرّف على الكلمات ثم حل الخطوات الخمس.<br>٢) <b>افتح الصفحة كل يوم ١٠ دقائق</b> وابدأ بـ«مراجعة اليوم». الصفحة تتذكر الكلمات اللي غلطت فيها وترجعها لك أكثر.<br>٣) الكلمة تصير ✅ محفوظة لما تجاوبها صح من أول مرة في <b>٣ أيام مختلفة</b>. الحفظ في يوم واحد ينسى بسرعة، التكرار على أيام يثبّت.<br>٤) اقرأ حيلة الحفظ 💡 بصوت عالي وتخيّلها كأنها صورة.</p>
+  <button class="reset" id="rs">مسح التقدم والبدء من جديد</button></details>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const LESSONS=[
+{n:1,t:"Omar's Busy Week",w:[
+["routine","n.","روتين / نظام يومي","رُوتين","🔁","نفس الكلمة بالعربي! روتينك اليومي: تصحى، تصلي، تفطر، تروح المدرسة.","My morning routine starts at 6 a.m.","My morning ____ is simple: I wake up, pray and have breakfast."],
+["early","adv.","مبكراً / بدري","إيرلي","🌅","فيها ear = أُذن 👂: أذنك تسمع المنبّه بدري الصبح.","I go to bed early on school days.","I go to bed ____ on school days."],
+["usually","adv.","عادةً","يُوجوالي","🕗","«يو-جوالي» = you + جوالي: أنت عادةً ماسك جوالك!","We usually eat dinner at eight.","We ____ eat dinner at eight."],
+["crowded","adj.","مزدحم","كراودِد","👥","crowd = جمهور. الملعب مليان crowd = مزدحم.","The market is crowded on Thursdays.","The shop is very ____ on Fridays. There are many people."],
+["subject","n.","مادة دراسية","سَبْجِكت","📚","«سَبْ-جِكت»: تخيّل «سبع» مواد في جدولك المدرسي.","Science is my favourite subject.","Maths is my favourite ____ at school."],
+["revise","v.","يراجع (الدروس)","ريفايز","📝","re = مرة ثانية: تراجع الدرس يعني تشوفه مرة ثانية.","I revise my notes before every test.","I always ____ my lessons before an exam."],
+["healthy","adj.","صحي","هِيلثي","🥗","«هيل-ثي»: الهيل في القهوة صحي 🌿. وhealth = صحة.","Fruit is healthy food.","Fruit is ____ food."],
+["neighbour","n.","جار","نيبَر","🏠","«نيبر» تشبه near = قريب: الجار ساكن قريب منك.","Our neighbour has a big garden.","Our ____ has a big garden."],
+["tired","adj.","متعب / تعبان","تايرد","😴","«تاير» = كفر السيارة 🛞: غيّرت التاير في الحر… صرت تعبان!","I'm tired after football practice.","After a long day, I feel ____ and I want to sleep."],
+["weekend","n.","عطلة نهاية الأسبوع","ويكِند","📅","week = أسبوع + end = نهاية ← نهاية الأسبوع.","We visit my grandparents at the weekend.","We visit my grandmother every ____."]]},
+{n:2,t:"Waiting at the Airport",w:[
+["queue","n.","طابور","كيو","🧍","«كيو» = حرف Q ووراه u-e-u-e واقفين طابور ينتظرون!","There was a long queue at the bank.","We waited in a long ____ to buy the tickets."],
+["abroad","adv.","في الخارج / خارج البلد","أبرود","🌍","«أبرود» تشبه «أبرد»: تسافر برّا للخارج تدوّر الجو الأبرد.","My brother studies abroad.","My cousin is studying ____, in Germany."],
+["relative","n.","قريب (من العائلة)","ريلَتِف","👨‍👩‍👦","relate = يرتبط: قريبك مرتبط فيك بالدم.","All my relatives came to the wedding.","My aunt is my mother's sister. She is a close ____."],
+["nervous","adj.","متوتر / قلقان","نيرفَس","😬","nerves = أعصاب: أعصابه مشدودة = متوتر.","I feel nervous before exams.","I always feel ____ before an exam."],
+["passenger","n.","راكب / مسافر","باسِنجر","💺","pass = يعبر: الراكب يعبر من مدينة لمدينة.","The bus has fifty passengers.","Every ____ on the plane must wear a seat belt."],
+["luggage","n.","أمتعة / شنط السفر","لَقِج","🧳","«لَقِج» تشبه «لقيت؟»: في المطار دايم تسأل: لقيت شنطتي؟","Put your luggage on the trolley.","Your ____ is too heavy! What's in your bag?"],
+["announcement","n.","إعلان (رسمي / صوتي)","أنَاونسمِنت","📢","«أنا-ونس»: صوت المطار يقول «أنا أعلن…» = إعلان.","Listen to the announcement carefully.","Listen to the ____ carefully."],
+["delayed","adj.","متأخر عن موعده","ديلَيد","⏰","delay تشبه late = متأخر: الرحلة تأخرت = delayed.","Our train was delayed by an hour.","The train is ____ because of the bad weather."],
+["gate","n.","بوابة","قيت","🚪","«قيت» = البوابة، مثل ما تقرا في المطار: Gate 12.","Go to Gate 5 to get on the plane.","Please wait near the ____. The plane is there."],
+["board","v.","يصعد (طائرة / قطار)","بورد","🛫","board = لوح خشب: زمان الركاب يصعدون السفينة على لوح خشب.","Passengers are boarding the train now.","Please ____ the plane now. It leaves in ten minutes."]]},
+{n:3,t:"The Lost Wallet",w:[
+["wallet","n.","محفظة","والِت","👛","«والِت» تشبه «وَلَّت»: المحفظة ضاعت والفلوس وَلَّت!","I keep my money in my wallet.","I keep my money in my ____."],
+["notice","v.","يلاحظ","نوتِس","👀","note = ملاحظة 📝 ← notice = يلاحظ.","Did you notice his new haircut?","Did you ____ his new haircut?"],
+["search","v.","يبحث / يفتّش","سيرتش","🔍","زر Search 🔍 في قوقل = بحث.","The police searched the car.","Let's ____ the house. My keys must be here somewhere."],
+["empty","adj.","فارغ / فاضي","إمتي","📭","«إمتي» تشبه «إمتى؟»: إمتى تمتلي الثلاجة؟ هي فاضية!","The classroom was empty after school.","The fridge is ____. We need to buy food."],
+["decide","v.","يقرر","ديسايد","🤔","de + side: تختار side (جهة) من الجهتين = تقرر.","I decided to study medicine.","I can't ____ which shirt to buy."],
+["reward","n.","مكافأة","ريوورد","🎁","«ري-وورد»: word (كلمة) حلوة + هدية = مكافأة.","He got a reward for his hard work.","The police are offering a ____ for information about the thief."],
+["refuse","v.","يرفض","ريفيوز","🙅","«ريفيوز» فيها «فيوز»: الفيوز يرفض يشغّل الكهرباء.","She refused to eat the cold food.","If he asks you to cheat, ____ and say no."],
+["owner","n.","مالك / صاحب","أونَر","🔑","own = يملك ← owner = اللي يملك = المالك.","Who is the owner of this bike?","Who is the ____ of this car? It's blocking the street."],
+["grateful","adj.","ممتنّ / شاكر","قريتفُل","🙏","great + full: قلبه مليان (full) شكر كبير (great) = ممتن.","I'm grateful to my teachers.","I'm very ____ for your help. Thank you!"],
+["honest","adj.","أمين / صادق","أونِست","🤝","«أونِست»: حرف h ما ينطق… والأمين ما يكذب ولا بحرف!","An honest person tells the truth.","Always tell the truth. Be ____."]]},
+{n:4,t:"The Night of the Storm",w:[
+["storm","n.","عاصفة","ستورم","🌪️","«ستورم» تشبه «استُر»: العاصفة جاية، استُر نفسك وادخل البيت!","The storm broke many trees.","The ____ broke many trees."],
+["thunder","n.","رعد","ثَنْدَر","⛈️","«ثَنْدَر»: صوت الرعد «ثنننن… دررر» مثل الطبل 🥁.","The thunder woke the baby up.","The noise of the ____ was very loud."],
+["lightning","n.","برق","لايتنِنق","⚡","light = ضوء 💡: البرق ضوء قوي في السماء.","Lightning lit up the dark sky.","____ lit up the dark sky."],
+["suddenly","adv.","فجأة","سَدِنلي","❗","«سَدّ-نلي»: فجأة انسدّ الطريق قدامك!","Suddenly, the car stopped.","I was walking home when ____ it started to rain."],
+["power cut","n.","انقطاع الكهرباء","باوَر كَت","🔌","power = كهرباء/طاقة + cut = قطع ← انقطاع الكهرباء.","We had a power cut last night.","We had a ____ last night. The lights went out."],
+["scared","adj.","خائف","سكيرد","😨","«سكيرد» تشبه «سكّر»: سكّر عيونه من الخوف.","Are you scared of the dark?","My little sister is ____ of dogs."],
+["shout","v.","يصرخ / يصيح","شاوت","🗣️","«شاوت» تشبه «شوت!»: المشجع يصرخ: شوووت! ⚽","Don't shout! I can hear you.","Don't ____! I can hear you."],
+["calm","adj.","هادئ","كام","😌","«كام»: حرف l ساكت وهادئ ما ينطق = هادئ.","The sea is calm today.","Stay ____ and don't worry. Everything will be OK."],
+["candle","n.","شمعة","كاندِل","🕯️","«كاندِل» تشبه «قنديل» = نفس الأصل!","She lit a candle on the table.","We lit a ____ because there was no electricity."],
+["safe","adj.","آمن","سيف","🛡️","«سيف» ⚔️ بيدك يحميك… أنت آمن!","Is it safe to swim here?","Put your money in a ____ place."]]}
+];
+const W=[];LESSONS.forEach((L,li)=>L.w.forEach(a=>W.push({en:a[0],pos:a[1],ar:a[2],pr:a[3],emo:a[4],trick:a[5],ex:a[6],gap:a[7],li})));
+const STEPS=[["learn","١ تعرّف"],["meaning","٢ المعنى"],["word","٣ الكلمة"],["listen","٤ اسمع"],["sentence","٥ الجملة"],["spell","٦ اكتبها"]];
+const GAP=[0,1,2,4,7,14];
+const KEY="rr-vocab-l1-4";
+let S={name:"",w:{},done:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.w)S=Object.assign(S,s)}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+const $=s=>document.querySelector(s);
+const app=$("#app");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const today=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const days=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
+const rec=w=>S.w[w.en]||(S.w[w.en]={b:0,d:"",weak:0});
+const learned=w=>(S.w[w.en]||{}).b>=3;
+const stars=w=>{const b=Math.min(3,(S.w[w.en]||{}).b||0);return "★".repeat(b)+"☆".repeat(3-b)};
+function due(){const t=today();return W.filter(w=>{const r=S.w[w.en];if(!r||(!r.b&&!r.weak))return false;if(r.weak)return true;return !r.d||days(r.d,t)>=GAP[Math.min(r.b,5)]})}
+function credit(w,ok){const r=rec(w),t=today();if(ok){if(r.d!==t){r.b=Math.min(5,r.b+1);r.d=t;if(r.b===3)toast("🎉 كلمة جديدة محفوظة: "+w.en)}r.weak=0}else{r.b=Math.max(0,r.b-1);r.weak=1}save();head()}
+function head(){$("#tot").textContent="✅ "+W.filter(learned).length+" / 40"}
+let tmr;function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");clearTimeout(tmr);tmr=setTimeout(()=>e.classList.remove("on"),2200)}
+let voice=null;function pickVoice(){try{const v=speechSynthesis.getVoices();voice=v.find(x=>/en-GB/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang))||null}catch(e){}}
+try{pickVoice();speechSynthesis.onvoiceschanged=pickVoice}catch(e){}
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=voice?voice.lang:"en-GB";if(voice)u.voice=voice;u.rate=.8;speechSynthesis.speak(u)}catch(e){}}
+let AC=null;function beep(ok){try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();const o=AC.createOscillator(),g=AC.createGain(),t=AC.currentTime;o.type=ok?"sine":"triangle";o.frequency.setValueAtTime(ok?660:220,t);if(ok)o.frequency.setValueAtTime(880,t+.09);g.gain.setValueAtTime(.18,t);g.gain.exponentialRampToValueAtTime(.001,t+.3);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+.32)}catch(e){}}
+const nmEl=$("#nm");nmEl.value=S.name||"";nmEl.oninput=()=>{S.name=nmEl.value.trim();save()};
+$("#rs").onclick=()=>{if(confirm("متأكد؟ راح يتمسح كل التقدم.")){S={name:S.name,w:{},done:{}};save();head();home()}};
+const enS=t=>'<span class="en">'+esc(t)+'</span>';
+const hi=(ex,w)=>{const re=new RegExp("("+w.en.replace(/ /g,"\\s")+"[a-z]*)","i");return esc(ex).replace(re,"<mark>$1</mark>")};
+
+function home(){
+  const d=due().length,nm=S.name?("يا "+esc(S.name)):"";
+  let h='<h1>هيا نحفظ الكلمات '+nm+' 💪</h1><p class="sub">٤٠ كلمة من أول ٤ دروس في كتابك. كل كلمة لها صورة وحيلة تساعدك تتذكرها.</p>';
+  h+='<div class="today"><div>'+(d?'📅 <b>مراجعة اليوم:</b> '+d+' كلمة تحتاج تراجعها الآن':'📅 <b>مراجعة اليوم:</b> ما فيه كلمات مستحقة الآن. ابدأ درس أو ارجع بكرة 🌙')+'</div>'+(d?'<button class="btn or" id="gr">ابدأ المراجعة</button>':'')+'</div>';
+  h+='<div class="lessons">';
+  LESSONS.forEach((L,i)=>{const ws=W.filter(w=>w.li===i),n=ws.filter(learned).length,st=(S.done[i]||[]).length;
+    h+='<button class="lc" data-l="'+i+'"><span class="num">الدرس '+(i+1)+'</span><span class="tt en" style="text-align:right">'+esc(L.t)+'</span><span class="meter"><i style="width:'+(n*10)+'%"></i></span><span class="st">✅ محفوظة '+n+' / 10 · الخطوات '+st+' / 6</span></button>'});
+  h+='</div><div class="row" style="margin-top:16px"><button class="btn alt" id="mix">🎲 تحدّي الأربع دروس (٢٠ سؤال)</button><button class="btn ghost" id="wl">📋 كل كلماتي</button></div>';
+  app.innerHTML=h;
+  app.querySelectorAll(".lc").forEach(b=>b.onclick=()=>lesson(+b.dataset.l,firstStep(+b.dataset.l)));
+  if(d)$("#gr").onclick=()=>review();
+  $("#mix").onclick=()=>mix();$("#wl").onclick=()=>wordList();
+  window.scrollTo(0,0);
+}
+function firstStep(i){const dn=S.done[i]||[];const k=STEPS.findIndex(s=>dn.indexOf(s[0])<0);return k<0?0:k}
+function stepBar(i,k){return '<button class="back" id="bk">→ رجوع للصفحة الرئيسية</button><h1>الدرس '+(i+1)+': '+enS(LESSONS[i].t)+'</h1><div class="steps">'+STEPS.map((s,j)=>'<button class="sp'+(j===k?' on':'')+((S.done[i]||[]).indexOf(s[0])>=0?' done':'')+'" data-k="'+j+'">'+s[1]+'</button>').join("")+'</div><div id="stage"></div>'}
+function lesson(i,k){
+  app.innerHTML=stepBar(i,k);$("#bk").onclick=home;
+  app.querySelectorAll(".sp").forEach(b=>b.onclick=()=>lesson(i,+b.dataset.k));
+  const ws=W.filter(w=>w.li===i),type=STEPS[k][0];
+  const fin=(mist)=>{S.done[i]=S.done[i]||[];if(S.done[i].indexOf(type)<0)S.done[i].push(type);save();
+    const last=k===STEPS.length-1;
+    $("#stage").innerHTML='<div class="fin"><div class="big pop">'+(mist?'👍':'🏆')+'</div><h1>'+(mist?'أحسنت! خلصت الخطوة':'ممتاز! ولا غلطة')+'</h1><p class="sub">'+(mist?'غلطت في '+mist+' مرة، والكلمات اللي غلطت فيها راح ترجع لك في مراجعة اليوم.':'كل الإجابات صح من أول مرة 👏')+'</p><div class="row" style="justify-content:center">'+(last?'<button class="btn" id="nx">ارجع للدروس</button>':'<button class="btn" id="nx">الخطوة التالية ←</button>')+'<button class="btn alt" id="ag">أعد الخطوة</button></div></div>';
+    $("#nx").onclick=()=>last?home():lesson(i,k+1);$("#ag").onclick=()=>lesson(i,k)};
+  if(type==="learn")learn(ws,0,()=>fin(0));else quiz(ws,()=>type,fin,W.filter(w=>w.li===i));
+  window.scrollTo(0,0);
+}
+function learn(ws,j,done){
+  const w=ws[j];
+  $("#stage").innerHTML='<div class="card pop"><span class="cnt">'+(j+1)+' / '+ws.length+'</span><div class="emo">'+w.emo+'</div><div class="w en">'+esc(w.en)+'</div><div class="pr">تُنطق: '+esc(w.pr)+' · <span class="pos en">'+esc(w.pos)+'</span></div><div class="ar">'+esc(w.ar)+'</div><button class="say" id="s1">🔊 اسمع الكلمة</button><div class="trick">'+esc(w.trick)+'</div><div class="ex en">'+hi(w.ex,w)+'</div><div style="margin-top:8px"><button class="say" id="s2">🔊 اسمع الجملة</button></div></div><p class="sub" style="text-align:center;margin-top:10px">قل الكلمة بصوتك ٣ مرات، وقل معناها 🗣️</p><div class="row" style="justify-content:space-between"><button class="btn ghost" id="pv"'+(j?'':' hidden')+'>→ السابقة</button><button class="btn" id="nx">'+(j<ws.length-1?'التالية ←':'خلصت، يلا نتدرب ←')+'</button></div>';
+  $("#s1").onclick=()=>say(w.en);$("#s2").onclick=()=>say(w.ex);
+  $("#pv").onclick=()=>learn(ws,j-1,done);$("#nx").onclick=()=>j<ws.length-1?learn(ws,j+1,done):done();
+  setTimeout(()=>say(w.en),250);
+}
+function quiz(words,typeOf,fin,pool){
+  let q=shuffle(words),pos=0,mist=0;const firstBad={};const total=words.length;const got=new Set();
+  const next=()=>{if(pos>=q.length){fin(mist);return}ask(q[pos],typeOf(q[pos]))};
+  function after(w,ok,first){
+    if(first){credit(w,ok)}
+    if(ok)got.add(w.en);
+  }
+  function ask(w,type){
+    const pct=Math.round(got.size/total*100);
+    let h='<div class="prog"><i style="width:'+pct+'%"></i></div><div class="qbox">';
+    const others=shuffle(pool.filter(x=>x.en!==w.en)).slice(0,3),opts=shuffle([w].concat(others));
+    if(type==="meaning")h+='<div class="qlabel">وش معنى الكلمة؟</div><div class="qword en">'+esc(w.en)+'</div><button class="say" id="sa">🔊</button>';
+    if(type==="word")h+='<div class="qlabel">وش الكلمة الإنجليزية؟</div><div style="font-size:42px">'+w.emo+'</div><div class="qar">'+esc(w.ar)+'</div>';
+    if(type==="listen")h+='<div class="qlabel">اسمع الكلمة واختر معناها</div><button class="big-say" id="sa" aria-label="اسمع">🔊</button>';
+    if(type==="sentence")h+='<div class="qlabel">اختر الكلمة المناسبة للفراغ</div><div class="qsent en">'+esc(w.gap).replace("____",'<span class="blank" id="bl">&nbsp;</span>')+'</div>';
+    if(type==="spell")h+='<div class="qlabel">اسمع واكتب الكلمة بالإنجليزي</div><div style="font-size:38px">'+w.emo+'</div><div class="qar">'+esc(w.ar)+'</div><button class="say" id="sa">🔊 اسمع</button><div class="hintl" id="hl">'+w.en.split("").map((c,i)=>c===" "?"  ":(i===0?c:"_")).join("")+'</div><div class="spell"><input id="inp" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type here"><button class="btn" id="chk">تحقق</button></div><div style="margin-top:8px"><button class="btn ghost" id="hint" style="min-height:38px;font-size:15px">💡 ساعدني بحرف</button></div>';
+    if(type!=="spell"){const ar=type==="meaning"||type==="listen";h+='<div class="opts">'+opts.map(o=>'<button class="opt'+(ar?'':' en')+'" data-e="'+esc(o.en)+'">'+esc(ar?o.ar:o.en)+'</button>').join("")+'</div>'}
+    h+='</div><div class="fb" id="fb"></div><div class="row" style="justify-content:center;margin-top:10px"><button class="btn" id="go" hidden>التالي ←</button></div>';
+    $("#stage").innerHTML=h;
+    const sa=$("#sa");if(sa)sa.onclick=()=>say(w.en);
+    if(type==="meaning"||type==="listen"||type==="spell")setTimeout(()=>say(w.en),250);
+    let first=firstBad[w.en]===undefined,tries=0;
+    let moved=false;const goOn=()=>{if(moved)return;moved=true;pos++;next()};
+    $("#go").onclick=goOn;
+    const wrong=()=>{beep(false);mist++;if(first){after(w,false,true);firstBad[w.en]=1;first=false}
+      if(q.indexOf(w,pos+1)<0)q.splice(Math.min(q.length,pos+3),0,w)};
+    const right=(msg)=>{beep(true);if(first){after(w,true,true);firstBad[w.en]=0}else after(w,true,false);
+      $("#fb").className="fb ok";$("#fb").innerHTML=msg;$("#go").hidden=false;$("#go").focus();
+      if(firstBad[w.en]===0)setTimeout(goOn,1300)};
+    if(type!=="spell"){
+      app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+        if(b.dataset.e===w.en){b.classList.add("ok");app.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(x!==b)x.classList.add("dim")});
+          if(type==="sentence"){$("#bl").textContent=w.gap.startsWith("____")?w.en.charAt(0).toUpperCase()+w.en.slice(1):w.en;say(w.gap.replace("____",w.en))}else say(w.en);
+          right('✔ صح! '+enS(w.en)+' = '+esc(w.ar))}
+        else{b.classList.add("bad");b.disabled=true;wrong();
+          $("#fb").className="fb no";$("#fb").innerHTML='✘ لا، حاول مرة ثانية. '+(type==="sentence"?'':'')+'<div class="trick">'+esc(w.trick)+'</div>'}
+      })}
+    else{
+      const inp=$("#inp");let shown=1;inp.focus();
+      const norm=s=>s.toLowerCase().replace(/[^a-z ]/g,"").replace(/\s+/g," ").trim();
+      $("#hint").onclick=()=>{shown=Math.min(w.en.length,shown+1);$("#hl").textContent=w.en.split("").map((c,i)=>c===" "?"  ":(i<shown?c:"_")).join("")};
+      const check=()=>{const v=norm(inp.value);if(!v){$("#fb").className="fb no";$("#fb").textContent="اكتب الكلمة أول.";return}
+        if(v===w.en){inp.classList.remove("bad");inp.classList.add("ok");inp.disabled=true;$("#chk").disabled=true;say(w.en);right('✔ صح! '+enS(w.en)+' = '+esc(w.ar))}
+        else{tries++;inp.classList.remove("bad");void inp.offsetWidth;inp.classList.add("bad");wrong();
+          if(tries>=2){$("#fb").className="fb no";$("#fb").innerHTML='الإجابة: <b class="en" style="font-size:22px">'+esc(w.en)+'</b> — اكتبها الآن بنفسك 👇<div class="trick">'+esc(w.trick)+'</div>';$("#hl").textContent=w.en}
+          else{$("#fb").className="fb no";$("#fb").innerHTML='✘ قريب! شوف الحرف الأول وحاول مرة ثانية.<div class="trick">'+esc(w.trick)+'</div>'}}};
+      $("#chk").onclick=check;inp.onkeydown=e=>{if(e.key==="Enter")check()};inp.oninput=()=>inp.classList.remove("bad");
+    }
+  }
+  next();
+}
+function mixedType(){return ["meaning","word","listen","sentence","spell"][Math.random()*5|0]}
+function solo(title,words,again){
+  app.innerHTML='<button class="back" id="bk">→ رجوع للصفحة الرئيسية</button><h1>'+title+'</h1><div id="stage"></div>';$("#bk").onclick=home;
+  const types={};words.forEach(w=>types[w.en]=mixedType());
+  quiz(words,w=>types[w.en],mist=>{
+    $("#stage").innerHTML='<div class="fin"><div class="big pop">'+(mist?'👍':'🏆')+'</div><h1>'+(mist?'خلصت!':'ممتاز! ولا غلطة')+'</h1><p class="sub">'+(mist?'غلطت '+mist+' مرة. الكلمات الصعبة راح ترجع لك.':'')+'</p><div class="row" style="justify-content:center"><button class="btn" id="hm">الصفحة الرئيسية</button>'+(again?'<button class="btn alt" id="ag">تحدّي جديد</button>':'')+'</div></div>';
+    $("#hm").onclick=home;if(again)$("#ag").onclick=again},W);
+  window.scrollTo(0,0);
+}
+function review(){const d=shuffle(due()).slice(0,20);if(!d.length)return home();solo("📅 مراجعة اليوم",d)}
+function mix(){solo("🎲 تحدّي الأربع دروس",shuffle(W).slice(0,20),mix)}
+function wordList(){
+  let h='<button class="back" id="bk">→ رجوع للصفحة الرئيسية</button><h1>📋 كل كلماتي</h1><p class="sub">★★★ = محفوظة (صح في ٣ أيام مختلفة). اضغط 🔊 لتسمع.</p><table class="wl">';
+  LESSONS.forEach((L,i)=>{h+='<tr class="lh"><td colspan="4">الدرس '+(i+1)+': '+enS(L.t)+'</td></tr>';
+    W.filter(w=>w.li===i).forEach(w=>{h+='<tr><td>'+w.emo+' '+enS(w.en)+'</td><td>'+esc(w.ar)+'</td><td class="stars">'+stars(w)+'</td><td><button class="say" data-s="'+esc(w.en)+'">🔊</button></td></tr>'})});
+  app.innerHTML=h+'</table>';$("#bk").onclick=home;
+  app.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>say(b.dataset.s));window.scrollTo(0,0);
+}
+head();home();
+</script>
+</body>
+</html>
